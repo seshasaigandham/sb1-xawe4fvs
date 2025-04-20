@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section id="home" className="pt-24 min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#1E5631] leading-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#148be3] leading-tight">
           Welcome to <span className="text-[#D4AF37]">IGNISIATrade LLP</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-700 max-w-3xl mx-auto leading-relaxed">
@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
         <button 
           onClick={scrollToProducts}
-          className="mt-8 bg-[#1E5631] text-white px-8 py-3 rounded-full flex items-center mx-auto hover:bg-[#164624] transition-colors duration-300 group"
+          className="mt-8 bg-[#148be3] text-white px-8 py-3 rounded-full flex items-center mx-auto hover:bg-[#164624] transition-colors duration-300 group"
         >
           Explore Our Products
           <ArrowDown className="ml-2 h-5 w-5 group-hover:animate-bounce" />
