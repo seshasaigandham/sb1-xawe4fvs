@@ -5,7 +5,7 @@ const Contact = () => {
     <section id="contact" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1E5631]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#148be3]">
             <span className="text-[#D4AF37]">📞</span> Get in Touch
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
@@ -16,7 +16,7 @@ const Contact = () => {
 
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
           <div className="md:flex">
-            <div className="md:w-1/2 bg-[#1E5631] text-white p-8">
+            <div className="md:w-1/2 bg-[#148be3] text-white p-8">
               <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
               <div className="flex items-start mb-6">
                 <Mail className="h-6 w-6 mr-4 mt-1" />
@@ -54,7 +54,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5631] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#148be3] focus:border-transparent"
                     placeholder="John Doe"
                   />
                 </div>
@@ -65,7 +65,7 @@ const Contact = () => {
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5631] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#148be3] focus:border-transparent"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -76,7 +76,7 @@ const Contact = () => {
                   <textarea
                     id="message"
                     rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5631] focus:border-transparent"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#148be3] focus:border-transparent"
                     placeholder="How can we help you?"
                   ></textarea>
                 </div>
