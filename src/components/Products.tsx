@@ -27,7 +27,7 @@ const Products = () => {
       id: 3,
       name: "Authentic Indian Spices",
       description: "Handpicked, aromatic, and preservative-free spices that bring the true essence of Indian cuisine to kitchens worldwide.",
-      image: "https://static.toiimg.com/thumb/msid-113199284,width-1280,height-720,imgsize-145810,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+      image: "https://elephantrunk.in/cdn/shop/products/bundle11.jpg?v=1706763214"
     }
   ];
 
