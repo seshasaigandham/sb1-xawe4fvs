@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
     <section id="why-choose-us" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1E5631]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#148be3]">
             <span className="text-[#D4AF37]">🌱</span> Why Choose Us
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
               className="bg-white p-6 rounded-lg shadow-md flex transition-transform duration-300 hover:-translate-y-1"
             >
               <div className="flex-shrink-0 mr-4">
-                <div className="h-10 w-10 rounded-full bg-[#1E5631] flex items-center justify-center">
+                <div className="h-10 w-10 rounded-full bg-[#148be3] flex items-center justify-center">
                   <Check className="h-6 w-6 text-white" />
                 </div>
               </div>
