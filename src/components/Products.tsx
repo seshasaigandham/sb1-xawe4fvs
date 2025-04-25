@@ -47,7 +47,7 @@ const Products = () => {
             <span className="text-[#D4AF37]">✨</span> Our Products
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            We carefully select and deliver premium quality Indian products that meet international standards and represent the rich heritage of India.
+            We carefully select and deliver premium quality products that meet international standards and reflect the richness of cultural heritage and craftsmanship.
           </p>
         </div>
 
