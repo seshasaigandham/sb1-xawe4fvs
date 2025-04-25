@@ -19,10 +19,10 @@ const Hero = () => {
         </p>
         <div className="bg-white p-6 rounded-lg shadow-lg max-w-3xl mx-auto mb-12 transform transition-all duration-500 hover:scale-105">
           <p className="text-gray-600 leading-relaxed mb-4">
-            At IGNISIATrade LLP, we are committed to delivering the richness of Indian products to global markets with trust, quality, and integrity.
+            At IGNISIATrade LLP, we are committed to delivering high-quality products to global markets with trust, consistency, and integrity.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            From sustainable packaging solutions to traditional agricultural goods, our mission is to bridge India's heritage with the world's demand.
+            From sustainable packaging solutions to authentic agricultural goods, our mission is to bridge tradition with modern demand across international markets.
           </p>
         </div>
         <button 
