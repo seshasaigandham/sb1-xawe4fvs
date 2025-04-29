@@ -16,7 +16,7 @@ const Products = () => {
       id: 1,
       name: "Eco-Friendly Areca Leaf Plates",
       description: "100% biodegradable and export-quality plates made from natural fallen areca palm leaves. Perfect for eco-conscious businesses and consumers.",
-      image: "https://api.globy.com/public/market/66027f4de0d34600d6833c6c/photos/66027f4de0d34600d6833c74/66027f4de0d34600d6833c74_lg.webp"
+      image: "https://api.globy.com/public/market/66027f4de0d34600d6833c6c/photos/66027f4de0d34600d6833c74/66027f4de0d34600d6833c74_lg.webp",
       catalogPdf: "https://drive.google.com/file/d/1Gd3A6DOzMutjYoTfG9P4gnJfYo2Eq8GU/view?usp=sharing"
     },
     {
