@@ -46,7 +46,7 @@ const Contact = () => {
             </div>
             <div className="md:w-1/2 p-8">
               <h3 className="text-xl font-semibold mb-6 text-[#1A5F7A]">Send us a message</h3>
-              <form>
+              <form name="contact" netlify>
                 <div className="mb-4">
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                     Your Name
