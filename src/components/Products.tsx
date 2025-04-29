@@ -5,6 +5,7 @@ interface Product {
   name: string;
   description: string;
   image: string;
+  catalogPdf?: string;
 }
 
 const Products = () => {
@@ -16,6 +17,7 @@ const Products = () => {
       name: "Eco-Friendly Areca Leaf Plates",
       description: "100% biodegradable and export-quality plates made from natural fallen areca palm leaves. Perfect for eco-conscious businesses and consumers.",
       image: "https://api.globy.com/public/market/66027f4de0d34600d6833c6c/photos/66027f4de0d34600d6833c74/66027f4de0d34600d6833c74_lg.webp"
+      catalogPdf: "https://drive.google.com/file/d/1Gd3A6DOzMutjYoTfG9P4gnJfYo2Eq8GU/view?usp=sharing"
     },
     {
       id: 2,
@@ -75,6 +77,17 @@ const Products = () => {
                 >
                   {activeProduct === product.id ? 'Show less' : 'Read more'}
                 </button>
+                {product.catalogPdf && (
+                    <a
+                      href={product.catalogPdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center text-sm text-[#2992e7] hover:text-[#1A5F7A] transition-colors duration-300"
+                    >
+                      <FileDown className="w-4 h-4 mr-1" />
+                      Download Catalog
+                    </a>
+                  )}
               </div>
             </div>
           ))}
