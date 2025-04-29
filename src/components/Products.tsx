@@ -5,7 +5,7 @@ interface Product {
   name: string;
   description: string;
   image: string;
-  catalogPdf?: string;
+  catalogPdf: string;
 }
 
 const Products = () => {
