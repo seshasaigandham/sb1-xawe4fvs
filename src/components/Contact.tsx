@@ -9,6 +9,7 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -21,21 +22,25 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError('');
 
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbz4vxpSkkXSguC7Q8rsRpnneWPJxrqiTYp3tmxadRqRIpxdDp49NtAEPxnbZjAkJJK0gg/exec', {
+      const formDataToSend = new FormData();
+      formDataToSend.append('Name', formData.name);
+      formDataToSend.append('Email', formData.email);
+      formDataToSend.append('Message', formData.message);
+
+      const response = await fetch('https://script.google.com/macros/s/AKfycbyBEy17VJK42ddKsYtZ9sLkAuXM8eW2QdOPqvxD4lGO-6IkUmhruQRf7YY2vEUSO7xMDg/exec', {
         method: 'POST',
         mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams(formData).toString()
+        body: formDataToSend
       });
 
       setIsSubmitted(true);
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('Error submitting form:', error);
+      setError('Failed to submit form. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -104,7 +109,7 @@ const Contact = () => {
                   <h3 className="text-xl font-semibold mb-6 text-[#1A5F7A]">
                     Send us a message
                   </h3>
-                  <form onSubmit={handleSubmit}>
+                  <form onSubmit={handleSubmit} name="submit-to-google-sheet">
                     <div className="mb-4">
                       <label
                         htmlFor="name"
@@ -159,6 +164,9 @@ const Contact = () => {
                         placeholder="How can we help you?"
                       ></textarea>
                     </div>
+                    {error && (
+                      <p className="text-red-500 text-sm mb-4">{error}</p>
+                    )}
                     <button
                       type="submit"
                       disabled={isSubmitting}
