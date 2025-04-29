@@ -9,8 +9,34 @@ import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
+    // Dynamic title for better SEO
     document.title = 'IGNISIATrade LLP - Your Trustful Partner in Global Trade';
-    
+    // Schema.org structured data for better search engine understanding
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      'name': 'IGNISIATrade LLP',
+      'description': 'Your Trustful Partner in Global Trade, specializing in Indian exports',
+      'url': 'https://ignisiatrade.com',
+      'logo': 'https://ignisiatrade.com/logo.png',
+      'address': {
+        '@type': 'PostalAddress',
+        'addressLocality': 'Hyderabad',
+        'addressRegion': 'Telangana',
+        'addressCountry': 'IN'
+      },
+      'contactPoint': {
+        '@type': 'ContactPoint',
+        'contactType': 'customer service',
+        'email': 'info@ignisiatrade.com'
+      }
+    };
+
+    // Add schema.org structured data
+    const scriptTag = document.createElement('script');
+    scriptTag.type = 'application/ld+json';
+    scriptTag.text = JSON.stringify(schema);
+    document.head.appendChild(scriptTag);
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
