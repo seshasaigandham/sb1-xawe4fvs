@@ -5,7 +5,7 @@ interface Product {
   name: string;
   description: string;
   image: string;
-  catalogPdf: string;
+  catalogPdf?: string;
 }
 
 const Products = () => {
@@ -71,13 +71,14 @@ const Products = () => {
                 <p className={`text-gray-600 ${activeProduct === product.id ? '' : 'line-clamp-2'}`}>
                   {product.description}
                 </p>
-                <button 
-                  onClick={() => toggleProductDetails(product.id)}
-                  className="mt-4 text-sm text-[#D4AF37] font-medium hover:underline focus:outline-none"
-                >
-                  {activeProduct === product.id ? 'Show less' : 'Read more'}
-                </button>
-                {product.catalogPdf && (
+                <div className="flex justify-between items-center mt-4">
+                  <button 
+                    onClick={() => toggleProductDetails(product.id)}
+                    className="text-sm text-[#D4AF37] font-medium hover:underline focus:outline-none"
+                  >
+                    {activeProduct === product.id ? 'Show less' : 'Read more'}
+                  </button>
+                  {product.catalogPdf && (
                     <a
                       href={product.catalogPdf}
                       target="_blank"
@@ -88,6 +89,7 @@ const Products = () => {
                       Download Catalog
                     </a>
                   )}
+                </div>
               </div>
             </div>
           ))}
