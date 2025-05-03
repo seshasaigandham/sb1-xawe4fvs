@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="pt-24 min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-white to-gray-50">
+    <section id="home" className="pt-24 min-h-screen flex flex-col justify-center items-center text-center relative bg-[#E1FEE9]">
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#148be3] leading-tight">
           Welcome to <span className="text-[#D4AF37]">IGNISIATrade LLP</span>
